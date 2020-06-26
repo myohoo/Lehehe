@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.chinasofti.abc.mapper.ArticleMapper">
+				   
+	<!-- 以下是常用的三种查询语句格式  -->
+	<!--  -->
+	<select id="findArticles" resultType="Article"  >
+		SELECT articleID,title,content,pic,authorID FROM article
+	</select>
+	
+	<select id="findOneArticle"  resultType="Article" >
+		SELECT articleID,title,content,pic,authorID FROM article
+		WHERE articleID=#{articleID}	
+	</select>
+	
+	<!--  -->
+	<select id="findArticlesByCriteria"   resultType="Article"  >
+		SELECT articleID,title,content,pic,authorID FROM article
+		WHERE authorID = #{authorID} 
+	</select>	
+	
+	<!-- 添加记录 -->
+	<insert id="addOneArticle"  parameterType="Article"  >
+		INSERT INTO article VALUES(DEFAULT,#{title},#{content},#{pic},#{authorID})
+	</insert>
+	
+	<!-- 删除记录 -->
+	<delete id="removeOneArticle" parameterType="Article"  >
+		DELETE FROM article WHERE articleID = #{articleID}
+	</delete>
+	
+	<!-- 修改记录 -->
+	<update id="modifyOneArticle" parameterType="Article"  >
+		UPDATE article 
+		<set>
+			<if test="title != null and title != ''">
+				title = #{title}
+			</if>
+			<if test="content != null and content != ''">
+				content = #{content}
+			</if>
+			<if test="pic != null and pic != ''">
+				pic = #{pic}
+			</if>
+			<if test="authorID != null and authorID != ''">
+				authorID = #{authorID}
+			</if>
+		</set>
+		WHERE articleID = #{articleID}
+	</update>
+	
+
+	<!-- 
+	<resultMap type="City" id="CityResult">
+		<id column="rid" property="cityId" javaType="int" jdbcType="INTEGER"  />
+		<result  column="district" property="cityName"  javaType="String" jdbcType="VARCHAR" />
+		<collection property="spots"  ofType="Spot" column="rid" 
+			select="com.chinasofti.abc.SpotDao.findSpotsByCity"	>					
+		</collection>
+	</resultMap>
+	 -->
+	<!-- 添加记录	
+	<parameterMap type="City" id="InfoParam">
+		<parameter property="cityId"  javaType="int" jdbcType="INTEGER"  />
+		<parameter property="cityName"  javaType="String" jdbcType="VARCHAR"  />	
+	</parameterMap>
+	 -->
+	<!-- 以下是1-多关系 
+	<select id="findOne2Many"  resultMap="CityResult" >
+		SELECT rid, district FROM  district
+		WHERE rid=#{0}	
+	</select>
+	 -->
+
+
+</mapper>

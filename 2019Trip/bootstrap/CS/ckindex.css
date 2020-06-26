@@ -1,0 +1,202 @@
+article, aside, blockquote, body, button, code, dd, details, div, dl, dt,
+fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header,
+hr, input, legend, li, menu, nav, ol, p, pre, section, td, textarea, th, ul{
+    padding: 0;
+    margin: 0;
+    outline:none;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none ;
+}
+/*-----------------头部css部分--------------------*/
+.all{
+    min-width: 1400px;
+}
+.headerul{
+    width: 100%;
+    list-style: none;
+    background-color: transparent;
+    position: absolute;
+    z-index: 100;
+}
+.headerul > li{
+    width: auto;
+    height: 8vh;
+    display: inline-block;
+    overflow: hidden;
+    /*vertical-align: middle;*/
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 0 5px;
+    line-height: 8vh;
+}
+.headerul > li:first-child{
+    padding-left:0px;
+}
+.headerul > li > a{
+    text-decoration: none;
+    color: white;
+}
+.index-logo{
+    width: 80px;
+}
+.func-li:hover{
+    border-top: solid 3px white;
+}
+.login-li{
+    float: right;
+    margin-right: 30px;
+}
+.reg-li{
+    float: right;
+    margin-right: 10px;
+}
+.car-pic{
+    width: 100vw;
+    min-width: 1400px;
+}
+.summary{
+    color: white;
+    z-index: 30;
+    position: absolute;
+    right: 40%;
+    bottom: 30px;
+}
+.place-p > a{
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    z-index: 1000;
+    /*text-decoration: none;*/
+}
+.sum-p > a{
+    font-size: 1.5rem;
+    color: white;
+    z-index: 1000;
+    /*text-decoration: none;*/
+}
+
+
+/*section部分，推荐地点*/
+.section-box2{
+    min-width: 1100px;
+    background-color: #F5F5F5;
+}
+
+.section-ul > li{
+    width: 22.5%;
+    /*height: 30vh;*/
+    min-width: 22%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    border: 1px solid #ECECEC;
+    padding-bottom: 30px;
+    background-color: #F5F5F5;
+}
+.section-ul > li:hover{
+   box-shadow: 1px 1px 5px #636363;
+}
+/*推荐图片属性*/
+.rec-div{
+    width: 100%;
+}
+.rec-pic{
+    width: 100%;
+}
+/*推荐图片简介属性*/
+.sum-pic-box{
+    width: 80%;
+    margin: auto;
+    color: #636363;
+}
+.sum-palce-name{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin-top: 15px;
+    color: #636363;
+}
+.sum-palce-name > a{
+    /*color: #636363;*/
+    text-decoration: none;
+}
+.writer{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+.writer > a{
+    /*color: #636363;*/
+    text-decoration: none;
+}
+
+/*图片标签及浏览量*/
+.sum-pic-tag-box{
+    width: 80%;
+    padding: 20px 0;
+    margin: auto;
+    position: relative;
+}
+.sum-pic-tag{
+    position: absolute;
+    left: 0;
+}
+.sum-pic-tag > a{
+    text-decoration: none;
+}
+.sum-brow{
+    position: absolute;
+    right: 0;
+}
+.sum-brow > a{
+    text-decoration: none;
+}
+
+
+/*footer部分*/
+
+/*app链接部分*/
+.app-box{
+    width: auto;
+    margin: auto;
+}
+.qyapp-ul-left{
+    margin: auto;
+    line-height: 100px;
+    overflow: hidden;
+    text-align: center;
+}
+.qyapp-ul-left > li{
+    width: auto;
+    display: inline-block;
+    margin-left: 30px;
+}
+.app-h2{
+    line-height: 100px;
+}
+.app-pic{
+    width: 80px;
+    line-height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

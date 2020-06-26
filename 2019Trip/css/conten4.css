@@ -1,0 +1,78 @@
+.suggestions a.mw-searchSuggest-link,
+			.suggestions a.mw-searchSuggest-link:hover,
+			.suggestions a.mw-searchSuggest-link:active,
+			.suggestions a.mw-searchSuggest-link:focus {
+				color: black;
+				text-decoration: none
+			}
+			
+			.suggestions-result-current a.mw-searchSuggest-link,
+			.suggestions-result-current a.mw-searchSuggest-link:hover,
+			.suggestions-result-current a.mw-searchSuggest-link:active,
+			.suggestions-result-current a.mw-searchSuggest-link:focus {
+				color: white
+			}
+			
+			.suggestions a.mw-searchSuggest-link .special-query {
+				overflow: hidden;
+				-o-text-overflow: ellipsis;
+				text-overflow: ellipsis;
+				white-space: nowrap
+			}
+			
+			.mw-mmv-overlay {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				z-index: 1000;
+				background-color: #000000
+			}
+			
+			body.mw-mmv-lightbox-open {
+				overflow-y: auto
+			}
+			
+			body.mw-mmv-lightbox-open #mw-page-base,
+			body.mw-mmv-lightbox-open #mw-head-base,
+			body.mw-mmv-lightbox-open #mw-navigation,
+			body.mw-mmv-lightbox-open #content,
+			body.mw-mmv-lightbox-open #footer,
+			body.mw-mmv-lightbox-open #globalWrapper {
+				display: none
+			}
+			
+			body.mw-mmv-lightbox-open>* {
+				display: none
+			}
+			
+			body.mw-mmv-lightbox-open>.mw-mmv-overlay,
+			body.mw-mmv-lightbox-open>.mw-mmv-wrapper {
+				display: block
+			}
+			
+			.mw-mmv-filepage-buttons {
+				margin-top: 5px
+			}
+			
+			.mw-mmv-filepage-buttons .mw-mmv-view-expanded,
+			.mw-mmv-filepage-buttons .mw-mmv-view-config {
+				display: block;
+				line-height: inherit
+			}
+			
+			.mw-mmv-filepage-buttons .mw-mmv-view-expanded.mw-ui-icon:before {
+				background-image: url(../img/rec2.jpg);
+				background-image: url(../img/bg1.jpg)!ie
+			}
+			
+			.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before {
+				background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%20768%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M897%20454.6V313.4L810.4%20299c-6.4-23.3-16-45.7-27.3-65.8l50.5-71.4-99.4-100.2-71.4%2050.5c-20.9-11.2-42.5-20.9-65.8-27.3L582.6-1H441.4L427%2085.6c-23.3%206.4-45.7%2016-65.8%2027.3l-71.4-50.5-100.3%2099.5%2050.5%2071.4c-11.2%2020.9-20.9%2042.5-27.3%2066.6L127%20313.4v141.2l85.8%2014.4c6.4%2023.3%2016%2045.7%2027.3%2066.6L189.6%20607l99.5%2099.5%2071.4-50.5c20.9%2011.2%2042.5%2020.9%2066.6%2027.3l14.4%2085.8h141.2l14.4-86.6c23.3-6.4%2045.7-16%2065.8-27.3l71.4%2050.5%2099.5-99.5-50.5-71.4c11.2-20.9%2020.9-42.5%2027.3-66.6l86.4-13.6zm-385%2077c-81.8%200-147.6-66.6-147.6-147.6%200-81.8%2066.6-147.6%20147.6-147.6S659.6%20302.2%20659.6%20384%20593.8%20531.6%20512%20531.6z%22%20fill%3D%22%23777%22%2F%3E%0A%3C%2Fsvg%3E%0A);
+				background-image: url(../img/rec3.jpg)!ie;
+				opacity: 0.75
+			}
+			
+			.mw-mmv-filepage-buttons .mw-mmv-view-config.mw-ui-icon:before:hover {
+				opacity: 1
+			}

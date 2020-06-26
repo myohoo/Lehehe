@@ -1,0 +1,57 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+ul,li{list-style:none;}
+img{border:none;display:block;}
+a{text-decoration:none;}
+body{font-size:16px;}
+/*头部*/
+.header{width:1000px;margin:auto;height:50px;padding-top:30px;padding-bottom:30px;}
+.header .logo{height:50px;float:left;}
+.header .tel{float:right;}
+.header .tel img{float:left;}
+.header .tel p{float:left;font-size:30px;line-height:50px;color:#1e50ae;}
+.nav{width:1000px;height:50px;line-height:50px;margin:auto;background:#333;}
+.nav li{float:left;text-align:center;}
+.nav a{display:block;width:150px;height:100%;color:#fff;}
+.nav li a:hover{background:#1e50ae;}
+/*banner图*/
+.banner{width:1000px;height:400px;margin:auto;}
+.banner img{width:100%;height:100%;}
+/*首页中间*/
+.content{width:1000px;overflow:hidden;margin:auto;margin-top:10px;}
+.content h2{text-align:center;line-height:30px;color:#1e50ae;margin-bottom:10px;}
+.jieshao{width:100%;overflow:hidden;}
+.jieshao img{width:300px;height:160px;float:left;margin-right:20px;}
+.jieshao p{line-height:30px;}
+.tuijian{width:1000px;overflow:hidden;margin:auto;margin-top:10px;}
+.tuijian ul{width:100%;overflow:hidden;margin-bottom:30px;}
+.tuijian li{width:220px;float:left;margin-left:40px;}
+.tuijian li:first-child{margin-left:0;}
+.tuijian li img{width:220px;height:220px;margin-bottom:10px;}
+.tuijian li p{line-height:30px;}
+.tuijian li p span{color:#1e50ae;}
+.tuijian li a{display:block;width:140px;height:36px;line-height:36px;text-align:center;background:#1e50ae;color:#fff;}
+/*底部*/
+.footer{width:1000px;overflow:hidden;padding-top:10px;background:#333;margin:auto;}
+.footer .footer-top{width:100%;overflow:hidden;}
+.footer .footer-top ul{width:630px;float:left;}
+.footer .footer-top li{width:210px;float:left;}
+.footer .footer-top li img{margin:auto;}
+.footer .footer-top li p{color:#fff;text-align:center;line-height:40px;}
+.footer .erweima{width:100px;float:right;margin-right:50px;}
+.footer .erweima img{width:100px;height:100px;}
+.footer .erweima p{font-size:14px;color:#fff;text-align:center;}
+.footer .footer-bottom{width:100%;line-height:50px;text-align:center;color:#fff;border-top:1px solid #ccc;}
+/*旅游线路页面和首页用同样的样式*/
+/*攻略*/
+.gonglue{width:100%;overflow:hidden;margin-bottom:30px;}
+.gonglue li{width:100%;height:100px;padding-top:10px;padding-bottom:10px;border-bottom:1px dashed #ccc;}
+.gonglue li img{width:160px;height:100px;float:left;margin-right:20px;}
+.gonglue li p{line-height:25px;}
+.gonglue li a{color:#000;font-weight:bold;}
+.gonglue li a:hover{color:#1e50ae;}
+/*关于我们*/
+.guanyu{width:100%;overflow:hidden;margin-bottom:30px;}
+.guanyu .tuwen{overflow:hidden;margin-bottom:10px;}
+.guanyu .tuwen img{float:left;margin-right:10px;}
+.guanyu .tuwen p{line-height:30px;text-indent:32px;}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.chinasofti.abc.mapper.AuthorMapper">
+				   
+	<!-- 以下是常用的三种查询语句格式  -->
+	<!--  -->
+	<select id="findAuthors" resultType="Author"  >
+		SELECT authorID,authorName FROM author
+	</select>
+	
+	<select id="findOneAuthor"  resultType="Author" >
+		SELECT authorID,authorName FROM author
+		WHERE authorID=#{0}	
+	</select>
+	
+	<!--  -->
+	<select id="findAuthorsByCriteria"   resultType="Author"  >
+		SELECT authorID,authorName FROM author
+		WHERE authorName like  CONCAT(#{authorName},"%")
+	</select>	
+	
+	<!-- 添加记录 -->
+	<insert id="addOneAuthor"  parameterType="Author"  >
+		INSERT INTO author VALUES(#{authorID}, #{authorName})	
+	</insert>
+	
+	<!-- 删除记录 -->
+	<delete id="removeOneAuthor" parameterType="Author"  >
+		DELETE FROM author WHERE authorID = #{authorID}
+	</delete>
+	
+	<!-- 修改记录 -->
+	<update id="modifyOneAuthor" parameterType="Author"  >
+		UPDATE author SET authorName=#{authorName} WHERE authorID=#{authorID}
+	</update>
+	
+
+	<!-- 
+	<resultMap type="City" id="CityResult">
+		<id column="rid" property="cityId" javaType="int" jdbcType="INTEGER"  />
+		<result  column="district" property="cityName"  javaType="String" jdbcType="VARCHAR" />
+		<collection property="spots"  ofType="Spot" column="rid" 
+			select="com.chinasofti.abc.SpotDao.findSpotsByCity"	>					
+		</collection>
+	</resultMap>
+	 -->
+	<!-- 添加记录	
+	<parameterMap type="City" id="InfoParam">
+		<parameter property="cityId"  javaType="int" jdbcType="INTEGER"  />
+		<parameter property="cityName"  javaType="String" jdbcType="VARCHAR"  />	
+	</parameterMap>
+	 -->
+	<!-- 以下是1-多关系 
+	<select id="findOne2Many"  resultMap="CityResult" >
+		SELECT rid, district FROM  district
+		WHERE rid=#{0}	
+	</select>
+	 -->
+
+
+</mapper>

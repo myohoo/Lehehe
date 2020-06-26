@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+		<!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+		<script type="text/javascript" src="bootstrap/js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<!--<link rel="stylesheet" href="bootstrap/CS/htmleaf-demo.css" />-->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<script type="text/javascript" src="bootstrap/js/vue-2.4.0.js"></script>
+		<script type="text/javascript" src="bootstrap/js/vue-resource-1.3.4.js"></script>
+		<script type="text/javascript" src="bootstrap/js/jquery-1.11.3.js"></script>
+		<!--
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+		<script type="text/javascript" src="bootstrap/js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js">
+		</script>
+
+		<style type="text/css">
+			.containerbgcolor {
+				background-color: darkseagreen;
+				border: 1px solid white;
+			}
+			
+			.header {
+				height: 50px;
+			}
+			
+			.main {
+				background-color:lightcyan;
+			}
+			
+			.maincontent {
+				/*border: 1px solid whitesmoke;*/
+			}
+			
+			.colorrow {
+				background-color: darkcyan;
+				border: 5px dashed orange;
+			}
+			
+			.bordercol {
+				border: 1px solid red;
+			}
+		</style>
+
+	</head>
+
+	<script type="text/javascript">
+		function regist() {
+			var tid = document.getElementById("inputEmail2").value;
+			var tcontent = document.getElementById("inputPassword2").value;
+			var tlike = document.getElementById("likes").value;
+			var tposition = document.getElementById("tposition").value;
+			document.write("发表成功,点击<a href='testTravel.html'>返回</a>");
+
+			var matchResult = true;
+			if(tid == "") {
+				document.getElementById("msg").innerHTML = "请输入！";
+				document.getElementById("msg").focus();
+				document.getElementById("msg").style.color = "red";
+				matchResult = false;
+			} else if(tcontent == "") {
+				document.getElementById("msg1").innerHTML = "请输！";
+				document.getElementById("msg1").focus();
+				document.getElementById("msg1").style.color = "red";
+				matchResult = false;
+
+			}
+			if(matchResult == true) {
+				$.post("http://localhost:8080/LeHeHe/content/doInsertCon", {
+					tid: tid,
+					tcontent: tcontent,
+					tlike: tlike,
+					tposition: tposition
+				}, function(data, status) {
+
+					var result = data.result;
+
+					if(result == "0") {
+						document.getElementById("msg").innerHTML = "用户名已存在";
+						document.getElementById("msg").focus();
+						document.getElementById("msg").style.color = "red";
+
+					} else if(result == "1") {
+						self.Location = "index.html";
+					}
+				}, "json");
+			}
+		};
+	</script>
+
+	<body>
+		<div style=""><img src="img/bg1.jpg" style="height: 180px;width: 100%;" /></div>
+		<!--////////////////////////////////////////头图end-->
+		<div class="container-fluid">
+			<!--////////////////////////////////////////////////////// n/-->
+			<p> </p>
+			<div class="main container-fluid">
+				<p> </p>
+				<style type="text/css">
+					#rowColos {
+						height: 200px;
+						width: 80%;
+						background: gainsboro;
+					}
+				</style>
+				<!--//////////////////////////////////////////数据提交/////////////////////-->
+				<div style="height: 40px;width:60%;background-color:lightcoral;line-height: initial;border-bottom-left-radius: 30px;border-top-right-radius: 30px;"><span style="text-align: center;line-height:40px;margin-left: 40px;font-size: 20px;">记录是一门艺术</span></div>
+				<div class="jumbotron" style="border-radius: 15px;background-color: gainsboro;">
+					<form>
+						<textarea type="text" class="jumbotron" id="inputPassword2" style="height: 200px;width: 80%;"></textarea>
+						<div style="background:gainsboro;width: 80%;margin-top: -30px;" class="row">
+							<div class="col-md-2">
+								<input type="text" class="form-control" id="inputEmail2" placeholder="游记编号">
+								<span id="msg"></span>
+								<i class="fa fa-user"></i>
+							</div>
+							<div class="col-md-2">
+								<input type="text" class="form-control" id="likes" placeholder="推荐值" />
+							</div>
+							<div class="col-md-2">
+								<input type="text" class="form-control" id="tposition" placeholder="地点" />
+							</div>
+							<!--<button class="btn btn-default" onclick="">注册</button>-->
+						</div>
+						<a class="btn btn-lg btn-primary " onclick="regist()" role="button " style="margin-bottom: -40px;float: right;">提交»</a>
+					</form>
+				</div>
+				<div class="container maincontent">
+					<div class="row ">
+						<div class="col-sm-4 ">
+							<div class="panel panel-default ">
+								<div class="panel-heading ">
+									<h3 class="panel-title ">Panel title</h3>
+								</div>
+								<div class="panel-body ">
+									Panel content
+								</div>
+							</div>
+							<div class="panel panel-primary ">
+								<div class="panel-heading ">
+									<h3 class="panel-title ">Panel title</h3>
+								</div>
+								<div class="panel-body ">
+									Panel content
+								</div>
+							</div>
+						</div>
+						<!-- /.col-sm-4 -->
+						<div class="col-sm-4 ">
+							<div class="panel panel-success ">
+								<div class="panel-heading ">
+									<h3 class="panel-title ">Panel title</h3>
+								</div>
+								<div class="panel-body ">
+									Panel content
+								</div>
+							</div>
+							<div class="panel panel-info ">
+								<div class="panel-heading ">
+									<h3 class="panel-title ">Panel title</h3>
+								</div>
+								<div class="panel-body ">
+									Panel content
+								</div>
+							</div>
+						</div>
+						<!-- /.col-sm-4 -->
+						<div class="col-sm-4 ">
+							<div class="panel panel-warning ">
+								<div class="panel-heading ">
+									<h3 class="panel-title ">Panel title</h3>
+								</div>
+								<div class="panel-body ">
+									Panel content
+								</div>
+							</div>
+							<div class="panel panel-danger ">
+								<div class="panel-heading ">
+									<h3 class="panel-title ">Panel title</h3>
+								</div>
+								<div class="panel-body ">
+									Panel content
+								</div>
+							</div>
+						</div>
+						<!-- /.col-sm-4 -->
+					</div>
+
+					<!--////////////////////////////////////////////////////////////////////-->
+				</div>
+				<!--container miancontent 结束-->
+
+			</div>
+			<!--main container-fluid-->
+			<style>
+				
+				input,
+				button,
+				a {
+					outline: 0 none !important;
+					blr: expression(this.onFocus=this.blur());
+				}
+				
+				.back {
+					position: fixed;
+					bottom: 50px;
+					right: 10px;
+					width: 60px;
+					height: 60px;
+					border-radius: 50%;
+				}
+				
+				#bb {
+					height: 60px;
+					width: 60px;
+					border-radius: 50%;
+				}
+			</style>
+
+			<div class="back">
+				<a href="trinote.html"><input type="button" value="返回" id="bb" class="btn btn-info btn-lg" /></a>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

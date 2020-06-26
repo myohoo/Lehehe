@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+<title>乐呵呵手机端</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.9.0.min.js"></script>
+ <!-- Custom files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+ <!-- Custom  files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript">
+	addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+</script>
+</head>
+<body>
+	<!----wrap---->
+		<div class="top-bannar" id="move-top">
+			<div class="container"> 
+				<div class="top-header row">
+					<!---logo--->
+				<div id="sb-search" class="sb-search">
+					<form>
+						<input type="text" class="sb-search-input" id="search" value="Search..." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search...';}">
+							<input class="sb-search-submit" type="submit" value="">
+							<span class="sb-icon-search"> </span>
+					</form>
+				</div>
+					<script src="js/classie.js"></script>
+					<script src="js/uisearch.js"></script>
+					<script>
+						new UISearch( document.getElementById( 'sb-search' ) );
+					</script>
+					<!---//logo--->
+					<!--top-nav---->
+					<div class="top-nav">
+						<div class="nav-icon">
+					    <a href="#" class="right_bt" id="activator"><span> </span> </a>
+						</div>
+						 <div class="box" id="box">
+							 <div class="box_content">        					                         
+								<div class="box_content_center">
+								 	<div class="form_content">
+										<div class="menu_box_list">
+											<ul>
+												<li><a href="#home"><span>手机端</span></a></li>
+												<li><a href="#features"><span>特点</span></a></li>
+												<li><a href="#works"><span>主要功能</span></a></li>
+												<li><a href="#gallery"><span>主要界面</span></a></li>
+												<li><a href="#testimonials"><span>开发团队</span></a></li>
+												<li><a href="#contact"><span>联系我们</span></a></li>
+												<div class="clearfix"> </div>
+											</ul>
+										</div>
+										<a class="boxclose" id="boxclose"> <span> </span></a>
+									</div>                                  
+								</div> 	
+							</div> 
+						</div>       	  
+					</div>
+					<!---start-click-drop-down-menu----->
+			        <!----start-dropdown--->
+			         <script type="text/javascript">
+						var $ = jQuery.noConflict();
+							$(function() {
+								$('#activator').click(function(){
+									$('#box').animate({'top':'0px'},900);
+								});
+								$('#boxclose').click(function(){
+								$('#box').animate({'top':'-1000px'},900);
+								});
+							});
+							$(document).ready(function(){
+							//Hide (Collapse) the toggle containers on load
+							$(".toggle_container").hide(); 
+							//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+							$(".trigger").click(function(){
+								$(this).toggleClass("active").next().slideToggle("slow");
+									return false; //Prevent the browser jump to the link anchor
+							});
+												
+						});
+					</script>
+					<!---//End-click-drop-down-menu----->
+					<!--top-nav---->
+					<div class="clear"> </div>
+					<!---header-welcomenote--->
+					<div class="col-md-12 header-welcome-note">
+						<div class=" col-md-6 welcome-note-left">
+							<span class="divice12"><img src="images/divice.png" alt="" /></span>
+								<h1><a href="#">乐呵呵旅行社</a></h1>
+								<p>
+
+乐呵呵旅游以“休闲旅游第一名”为战略目标，积极探索线上线下和体验相结合的“新旅游”模式，在发力机票、火车票、酒店、等业务外，积极布局境外游、国内游、周边游等业务板块，目前在中国景点门票预订、邮轮等多个领域处于市场领先位置。</p>
+									<ul class="button">
+										<li><a class="active" href="#">下载手机端</a></li>
+										<li><a href="#">了解更多</a></li>
+									</ul>
+						</div>
+						<div class="col-md-6 welcome-note-right">
+								<img src="images/divice.png" alt="" />
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!---//header-welcomenote--->
+				</div>
+				</div>
+		</div>
+		<!---start-content--->
+		<div  class=" features" id="features">
+				<div class=" row superb-feature">
+					<h2>乐呵呵旅行社——值得您的信赖</h2>
+					<p>乐呵呵旅行社是一个多元化旅游企业集团，也是中国领先的休闲旅游在线服务商和中国一流的一站式旅游预订平台。同程旅游是国家高新技术企业、商务部首批电子商务示范企业，连续多年入选“中国旅游集团20强</p>
+				</div>
+		</div>
+			<div  class="works" id="works">	
+					<!----start-works---->	
+						<div class="content_top">	
+							<div class="container">	
+								<div class="row content_main">															 			
+					                <div class="app_img col-md-5">				                
+							         	 	<img src="images/black-phone.png" alt="">
+					 	 	 		</div> 
+						 			 <div class="app_desc img col-md-7">      
+					                   <h3>乐呵呵价值观</h3>
+					                  <p>  客户第一
+客户是我们存在的理由
+从客户的角度看问题，以客户利益为先
+建立健康可持续的客户关系
+创新执行
+大胆创新，集思广益，打样试错，使命必达
+复杂的事情简单做，简单的事情重复做，重复做的事情创造性的做
+变化是一切机会的来源，拥抱变化，实现梦想
+正直进取
+清正廉洁，公平公正，不为个人利益牺牲公司与团队利益
+垃圾向上传，信心向下传，不散播流言，歪曲事实
+再难，别忘了梦想和坚持；再好，别忘了危机和奋斗；再忙，别忘了读书和锻炼
+合作共赢</p>
+<p>女：那一天 我们告别栀子的花香
+男：那一天 我们点燃心中的梦想
+合：心怀使命 激情飞扬 我们同程从这里起航 
+男：这一路 多少辛酸被时间遗忘
+女：这一路 多少感动让热泪盈眶
+合：激情勤奋，砥砺激扬 携手同程奔向新的远方
+让岁月书写拼搏的时光
+让风雨见证我们共同的成长
+让简单化作沟通的桥梁
+让奇迹证明团队的力量
+女：那一天 我们告别栀子的花香
+男：那一天 我们点燃心中的梦想
+合：心怀使命 激情飞扬 我们同程从这里起航
+男：这一路 多少辛酸被时间遗忘
+女：这一路 多少感动让热泪盈眶
+合：激情勤奋，砥砺激扬 携手同程奔向新的远方
+让勤奋成为我们的信仰
+让平凡成为创造奇迹的力
+让微笑绽放客户的脸庞
+让同程铸就你我的辉煌
+让同程铸就你我的辉煌</p>
+					                 </div>     
+				     		 		<div class="clearfix"> </div>
+				     		 	</div>  
+				     		 </div> 					              		    				    					                      			   							
+						</div>
+                        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >��ҵ��վģ��</a></div>		   		   				    		    					
+  		    			<div class="content_bottom">
+  		    				<div class="container ">
+  		    				 <div class=" row devices- main">	
+	  		    			     <div class=" col-md-7 devices_desc">
+						  		  	    	 <h3>更好的我们</h3>
+						  		  	    	   <p>虽然中美贸易战仍充满变数，但中港股市似见回稳，表现跑赢美股。
+虽然乐呵呵正式上市前大市风波不断，不过其表现证明了真金不怕洪炉火。
+
+另外，为投资者增加信心的是，乐呵呵背後的大股东可是带动香港股市回弹的「股王」腾讯(700) ，借着腾讯旗下社交软件的「流量金矿」支持，在强调流量的互联网时代，
+随着内地民众生活水准的提升，中国旅游业发展快速，在线旅游市场行业在未来必有大展拳脚的空间，投资者值得留意！牢记我们的口号：大胆创新，集思广益，打样试错，使命必达
+复杂的事情简单做，简单的事情重复做，重复做的事情创造性的做
+变化是一切机会的来源，拥抱变化，实现梦想
+正直进取
+再难，别忘了梦想和坚持；再好，别忘了危机和奋斗；再忙，别忘了读书和锻炼
+合作共赢  让岁月书写拼搏的时光
+让风雨见证我们共同的成长
+让简单化作沟通的桥梁
+让奇迹证明团队的力量
+</p>
+</div> 
+						  		  	<div class="col-md-5 devices">
+		  		  	    				<img src="images/black-phone2.png" alt="">	
+		  		  	    				 <div class="clearfix"> </div>  		  		  	     
+						  		   </div>	
+						  		 </div> 
+						  		</div>  	    																 				 	
+		  				 </div>  
+		  			 </div> 
+		  				 <!---start-our story----->
+		
+	<!-- Owl Carousel Assets -->
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		     <!-- Owl Carousel Assets -->
+		    <!-- Prettify -->
+		    <script src="js/owl.carousel.js"></script>
+		        <script>
+		    $(document).ready(function() {
+		
+		      $("#owl-demo").owlCarousel({
+		        items : 1,
+		        lazyLoad : true,
+		        autoPlay : true,
+		        navigation : true,
+			    navigationText : ["",""],
+			    rewindNav :true,
+			    scrollPerPage :true,
+			    pagination : true,
+    			paginationNumbers: false,
+		      });
+		
+		    });
+		    $(document).ready(function() {
+		
+		      $("#owl-demo1").owlCarousel({
+		        items : 1,
+		        lazyLoad : true,
+		        autoPlay : true,
+		        navigation : true,
+			    navigationText : ["",""],
+			    rewindNav : true,
+			    scrollPerPage :true,
+			    pagination : false,
+    			paginationNumbers: false,
+		      });
+		
+		    });
+		   
+		    </script>
+			<!--start-testimonials-->
+			<!---/start-text-slider----->
+		<div  class="testimonials" id="testimonials">
+			 <div class="wmuSlider example1">
+		 	<div class="container-flueid">
+			   <article style="position: absolute; width:64%; opacity: 0;"> 
+				   	
+					<div class=" cont span_2_of_3 client-main">
+						 	<div class="client">
+			  	    			<img src="images/client.png" alt="">
+							</div>
+							<div class="client-des">
+							       <h4>开发团队</h4>
+									<p>马金宝           1611650807      综合                </p>
+<p>王雪娜           1611650738    文档撰写    </p>
+						  	<span> </span>
+						 	</div>
+						 	<div class="clearfix"> </div>  
+					</div>
+				</article>
+				 <article style="position: absolute; width:64%; opacity: 0;"> 
+				   	<div class=" cont span_2_of_3  client-main">
+						 	<div class="client">
+			  	    			<img src="images/client3.jpg" alt="">
+							</div>
+							<div class="client-des">
+							    <h4>开发团队</h4>
+								<p>薛毅杰           1611650721       定位功能 </p>
+								<p>史佳朗         1611650728      登录注册</p>
+						  			<span> </span>
+						 	</div>
+						 	<div class="clearfix"> </div>  
+					</div>
+				 </article>
+				 <article style="position: absolute; width:64%; opacity: 0;"> 
+				   	<div class="cont span_2_of_3  client-main">
+						 	<div class="client">
+			  	    			<img src="images/client2.jpg" alt="">
+							</div>
+							<div class="client-des">
+							      <h4>开发团队</h4>
+									<p>岳中瑶         1611650338       酒店</p>
+									<p>许馨月   1611650327   景点</p>
+						  	<span> </span>
+						 	</div>
+						 	<div class="clearfix"> </div>  
+					</div>
+				 </article>
+		 
+                  <script src="js/jquery.wmuSlider.js"></script> 
+					<script>
+       				     $('.example1').wmuSlider();         
+   					</script> 	           	      
+	         </div>
+	     </div>
+	 </div>
+	 <!---//text-slider----->
+<!-- //end-testimonials-->
+<!---/contact----->
+	 
+		<!---//contact----->
+			<!-- /footer-->
+			<div class="footer">
+				<div class="footer-content">
+					<div class="footer-main">
+						<div class="footer-left col-md-6">
+							<h6>乐呵呵 APP</h6>
+						</div> 
+						<div class="footer-right col-md-6">
+							<div class="footer-button"><a href="#">download</a></div>
+						</div> 
+						<div class="clearfix"> </div>  
+					</div> 
+					<div class="social-icons">
+							<ul class="top-social-icons" list-unstyled>
+										<li> <a class="facebook simptip-position-bottom simptip-movable" data-tooltip="Facebook" href="#"> </a></li>
+										<li> <a class="twitter simptip-position-bottom simptip-movable" data-tooltip="Twitter" href="#"> </a></li>
+										<li> <a class="pin simptip-position-bottom simptip-movable" data-tooltip="Pintrest" href="#"> </a> </li>
+										<li> <a class="youtube simptip-position-bottom simptip-movable" data-tooltip="Youtube" href="#"> </a> </li>
+										<li> <a class="vimeo simptip-position-bottom simptip-movable" data-tooltip="Vimeo" href="#"> </a> </li>
+											<div class="clearfix"> </div>  
+									</ul>
+					</div>
+							<div class="col-md-12 copy-right">
+								<p>Copyright &copy;乐呵呵旅行社 </a>
+</p>
+							</div>
+				</div>
+			</div> 
+				<!-- //footer-->
+				 <a href="#move-top" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
+				<!---smoth-scrlling---->
+									<script type="text/javascript">
+											$(document).ready(function(){
+											$('a[href^="#"]').on('click',function (e) {
+											    e.preventDefault();
+											    var target = this.hash,
+											    $target = $(target);
+											    $('html, body').stop().animate({
+											        'scrollTop': $target.offset().top
+											    }, 1000, 'swing', function () {
+											        window.location.hash = target;
+											    });
+											});
+										});
+									</script>
+							<!---//smoth-scrlling---->
+</body>
+</html>

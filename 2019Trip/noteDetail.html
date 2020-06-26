@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>初学Bootstrap</title>
+		<link rel="stylesheet" href="bootstrap/CS/ckindex.css" />
+		<link rel="stylesheet" href="bootstrap/CS/bootstrap.main.css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<script type="text/javascript" src="bootstrap/js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="bootstrap/js/vue-2.4.0.js" ></script>
+		<script type="text/javascript" src="bootstrap/js/vue-resource-1.3.4.js" ></script>
+		<!--必须加载bootstrap之前-->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		
+
+	<style type="text/css">
+			.containerbgcolor {
+				background-color: darkmagenta;
+				border: 1px solid white;
+			}
+			
+			.header {
+				height: 50px;
+			}
+			
+			.main {}
+			
+			.maincontent {
+				border: 1px solid whitesmoke;
+				background-color: darkgrey;
+			}
+			
+			.colorrow {}
+			/*.bordercol {
+				border: 1px solid lawngreen;
+			}*/
+			
+			.car {
+				float: right;
+				margin-top: 20px;
+				margin-right: 20px;
+				color: orangered;
+			}
+			
+			.index-logo {
+				border-radius: 15px;
+			}
+			
+			.container-fluid {
+				padding-right: 0px;
+				padding-left: 0px;
+				margin-right: auto;
+				margin-left: auto
+			}
+			
+			.carousel-inner {
+				border-radius: 15px;
+			}
+			
+			#imgs {
+				/*border-radius: 15px;*/
+				width: 100%;
+				height: 350px;
+			}
+			
+			.navbar-fixed-top {}
+			
+			#navheader {
+				color: red;
+			}
+			
+			.nav-pills li a {
+				color: whitesmoke;
+				font-size: 20px;
+			}
+			
+			.nav-pills li a:hover {
+				color: fuchsia;
+				background-color: lawngreen;
+			}
+			
+			.nav-pills li.active {
+				color: mediumvioletred;
+			}
+			.headerul li a:hover{
+				color: deepskyblue;
+			}
+			.func-li:hover{
+    border-bottom: solid 3px deeppink;
+}
+..carousel-caption{
+				height: 5px;
+				width: ;
+				border-radius: 50%;
+				background-color: red;
+			}
+		</style>
+		
+	</head>
+
+	<body>
+		<div style="margin-top: 50px;"></div>
+	<div id="indexlb" class="carousel slide" data-ride="carousel" style="width: 100%;data-interval=" 1000 " >
+							<ul class="headerul" style="margin-top: 200px;">
+                                <li>
+                                    <a href="#">
+                                        <img src="image/(2).jpg" alt="0.0 " class="index-logo "/>
+                                    </a>
+                                </li>
+                                <li class="func-li ">
+                                    <a href="picture.html">相册</a>
+                                </li>
+                                <li class="func-li ">
+                                    <a href="# ">足记</a>
+                                </li>
+                                <li class="func-li ">
+                                    <a href="# ">社区</a>
+                                </li>
+                                <li class="func-li ">
+                                    <a href="# ">登录</a>
+                                </li>
+                                <li class="func-li ">
+                                    <a href="# ">酒店</a>
+                                </li>
+                                <li class="func-li ">
+                                    <a href="# ">社区</a>
+                                </li>
+                                <li class="func-li ">
+                                    <a href="# ">登录</a>
+                                </li>
+                              
+                            </ul>
+							<div class="carousel-inner">
+								
+							<div class="item active ">
+								<div class="carousel-caption" >
+									1号dsjkhfjalsfkj
+								</div>
+								<img src="image/u=1005973216,1769367849&fm=26&gp=0.jpg "  id="imgs" />
+								
+							</div>
+							
+							<div class="item">
+								<img src="image/u=1558952732,3825917189&fm=26&gp=0.jpg "  id="imgs" />
+								<div class="carousel-caption">
+									2号
+								</div>
+							</div>
+							<div class="item">
+								<img src="image/u=2315591995,4033863134&fm=26&gp=0.jpg " id="imgs" />
+								<div class="carousel-caption ">
+									3号
+								</div>
+								
+							</div>
+							
+						</div>	
+						
+						</div>
+	
+	
+		<div class="container-fluid" >
+			<div class="header container-fluid">
+				<nav class="navbar navbar-inverse navbar-fixed-top " role="navigation " style="opacity: 1; ">
+
+					<ul class="nav nav-pills ">
+						<li role="presentation ">
+							<a href="# ">目的攻略</a>
+						</li>
+						<li role="presentation ">
+							<a href="# ">游记</a>
+						</li>
+						<li role="presentation ">
+							<a href="trinote.html">我的</a>
+						</li>
+						<!--<li role="presentation ">
+							<a href="# ">美食</a>
+						</li>-->
+								<ul class="language ">
+							<li>
+								<a rel="nofollow " style="cursor:default " class="selected " onmouseover="this.className=&#39;selected language_current&#39;;this.nextElementSibling.style.display=&#39;block&#39;; " onmouseout="this.className=& #39;selected&#39;;this.nextElementSibling.style.display=&#39;none&#39;; "><span><em class="ico-global "></em> Language <b class="n-arrow "></b></span></a>
+								<div class="language_wrap drowndrop " style="display: none; " onmouseover="this.style.display=&#39;block&#39;;this.previousElementSibling.className=&#39;selected language_current&#39;; " onmouseout="this.style.display=&#39;none&#39;;this.previousElementSibling.className=&#39;selected&#39;; ">
+									<ul class="language_list " id="cui_lang_list ">
+										<li>
+											<a id="ctrip_cn " class="language_big5 " href=" ">简体中文</a>
+										</li>
+										<li>
+											<a id="ctrip_eng " class="language_en " href="trinote.html?locle=en_US ">English (United States)</a>
+										</li>
+										<li>
+											<a id="ctrip_uk " class="language_gb " href="https://uk.trip.com/?locale=en_gb ">English (United Kingdom)</a>
+										</li>
+										<li>
+											<a id="ctrip_hk " class="language_hk " href="http://hk.trip.com/?locale=zh_hk ">繁體中文 (香港)</a>
+										</li>
+										<li>
+											<a id="ctrip_hk_en " class="language_hk " href="https://hk.trip.com/?locale=en_hk ">English(Hong Kong)</a>
+										</li>
+										<li>
+											<a id="ctrip_korea " class="language_korea " href="https://kr.trip.com/?locale=ko_KR ">韩语版</a>
+										</li>
+										<li>
+											<a id="ctrip_jap " class="language_jap " href="https://jp.trip.com/?locale=ja_JP ">日语版</a>
+										</li>
+										<li>
+											<a id="ctrip_sg " class="language_sg " href="https://sg.trip.com/?locale=en_SG ">English (Singapore)</a>
+										</li>
+										<li>
+											<a id="ctrip_au " class="language_au " href="https://au.trip.com/?locale=en_au ">English (Australia)</a>
+										</li>
+										<li>
+											<a id="ctrip_de " class="language_de " href="https://de.trip.com/?locale=de_DE ">Deutsch</a>
+										</li>
+										<li>
+											<a id="ctrip_fr " class="language_fr " href="https://fr.trip.com/?locale=fr_FR ">Français</a>
+										</li>
+										<li>
+											<a id="ctrip_es " class="language_es " href="https://es.trip.com/?locale=es_ES ">Español</a>
+										</li>
+										<li>
+											<a id="ctrip_it " class="language_it " href="https://it.trip.com/?locale=it_IT ">Italiano</a>
+										</li>
+										<li>
+											<a id="ctrip_ru " class="language_ru " href="https://ru.trip.com/?locale=ru_RU ">Русский</a>
+										</li>
+										<li>
+											<a id="ctrip_th " class="language_th " href="https://th.trip.com/?locale=th_TH ">泰国站</a>
+										</li>
+										<li>
+											<a id="ctrip_id " class="language_id " href="https://id.trip.com/?locale=id_ID ">Bahasa Indonesia</a>
+										</li>
+										<li>
+											<a id="ctrip_my " class="language_my " href="https://my.trip.com/?locale=ms_MY ">Bahasa Malaysia</a>
+										</li>
+										<li>
+											<a id="ctrip_my_en " class="language_my " href="https://my.trip.com/?locale=en_my ">English (Malaysia)</a>
+										</li>
+										<li>
+											<a id="ctrip_vn " class="language_vn " href="https://vn.trip.com/?locale=vi_VN ">越南语</a>
+										</li>
+										<li>
+											<a id="ctrip_nl " class="language_nl " href="https://nl.trip.com/?locale=nl_NL ">荷兰语</a>
+										</li>
+										<li>
+											<a id="ctrip_pl " class="language_pl " href="https://pl.trip.com/?locale=pl_PL ">波兰语&gt;</a>
+										</li>
+										<li>
+											<a id="ctrip_gr " class="language_gr " href="https://gr.trip.com/?locale=el_GR ">希腊语</a>
+										</li>
+										<li>
+											<a id="ctrip_tr " class="language_tr " href="https://tr.trip.com/?locale=tr_TR ">土耳其语</a>
+										</li>
+										<li>
+											<a id="ctrip_pt " class="language_pt " href="https://br.trip.com/?locale=pt_BR ">巴西葡萄牙语</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					<!--////////////////////////////////////////////////////-->
+					</ul>
+				</nav>
+			</div>
+			<!--///////////////////////////////header container-fluid end///////////////////////////////////////-->
+ <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .box {
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ff6700;
+            overflow: hidden;
+        }
+ 
+        .animate {
+            padding-left: 20px;
+            font-size: 12px;
+            color: #000;
+            display: inline-block;
+            white-space: nowrap;
+            animation: 10s wordsLoop linear infinite normal;
+        }
+ 
+        @keyframes wordsLoop {
+            0% {
+                transform: translateX(200px);
+                -webkit-transform: translateX(200px);
+            }
+            100% {
+                transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+            }
+        }
+ 
+        @-webkit-keyframes wordsLoop {
+            0% {
+                transform: translateX(200px);
+                -webkit-transform: translateX(200px);
+            }
+            100% {
+                transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+            }
+        }
+    </style>
+	
+<div class="box">
+    <p class="animate">
+        考虑建档立卡分管领导空间的概率是客观
+    </p>
+</div>		
+		
+<div class="main container-fluid ">
+				<!--栅格系统 ：将页面横向 12等分 来策划页面元素占用12等分中的几份-->
+				
+				<div class="container maincontent ">
+
+					<div id="container-fluid ">
+	<!--//////////////////////////////////////////////////////////////////////////////////////////-->
+	<style>
+			.black_overlay {
+				display: none;
+				position: absolute;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 100%;
+				background-color: black;
+				z-index: 1001;
+				-moz-opacity: 0.8;
+				opacity: .80;
+				filter: alpha(opacity=80);
+			}
+			
+			.white_content {
+				display: none;
+				position: absolute;
+				top: 10%;
+				left: 10%;
+				width: 80%;
+				height: 80%;
+			/*	border: 16px solid lightblue;*/
+				background-color:lightblue;
+				z-index: 1002;
+				overflow: auto;
+			}
+			
+			.white_content_small {
+				display: none;
+				position: absolute;
+				top: 20%;
+				left: 30%;
+				width: 40%;
+				height: 50%;
+				border: 16px solid lightblue;
+				background-color: white;
+				z-index: 1002;
+				overflow: auto;
+			}
+		</style>
+		<script type="text/javascript">
+			//弹出隐藏层
+			function ShowDiv(show_div, bg_div) {
+				document.getElementById(show_div).style.display = 'block';
+				document.getElementById(bg_div).style.display = 'block';
+				/*var bgdiv = document.getElementById(bg_div);
+				bgdiv.style.width = document.body.scrollWidth;
+				
+				$("#" + bg_div).height($(document).height());*/
+			};
+			//关闭弹出层
+			function CloseDiv(show_div, bg_div) {
+				document.getElementById(show_div).style.display = 'none';
+				document.getElementById(bg_div).style.display = 'none';
+			};
+		</script>
+	<p></p>
+	<!--//////////////////评论 ///////////////////////-->
+	
+	<script type="text/javascript">
+		function regist() {
+			var cid = document.getElementById("cid").value;
+			var csubstance = document.getElementById("csubstance").value;
+			var cname = document.getElementById("cname").value;
+			/*var tposition = document.getElementById("tposition").value;
+*/			document.write("评论成功,点击<a href='noteDetail.html'>返回</a>");
+
+			var matchResult = true;
+			if(cid == "") {
+				document.getElementById("msg").innerHTML = "请输入！";
+				document.getElementById("msg").focus();
+				document.getElementById("msg").style.color = "red";
+				matchResult = false;
+			} else if(csubstance== "") {
+				document.getElementById("msg1").innerHTML = "请输！";
+				document.getElementById("msg1").focus();
+				document.getElementById("msg1").style.color = "red";
+				matchResult = false;
+
+			}
+			if(matchResult == true) {
+				$.post("http://localhost:8080/LeHeHe/comments/doInsertComments", {
+					cid: cid,
+					cname: cname,
+					csubstance:csubstance,
+					
+				}, function(data, status) {
+
+					var result = data.result;
+
+					if(result == "0") {
+						document.getElementById("msg").innerHTML = "用户名已存在";
+						document.getElementById("msg").focus();
+						document.getElementById("msg").style.color = "red";
+
+					} else if(result == "1") {
+						self.Location = "index.html";
+					}
+				}, "json");
+			}
+		};
+	</script>
+	<!--/////////////////////////////////////////////-->
+	<div id="app">
+	
+	<div class="row">
+	
+		<div class="col-md-12 col-sm-3" v-for="item in list" >
+			
+			
+		<div class="jumbotron ">
+			
+				<!--头图SHOW-->
+					<div class="container-fluid">
+					<!--	<div id="fade" class="black_overlay">-->
+		<div id="MyDiv" class="white_content"  style="height:410px;width: 80%;border-radius: 15px;">
+			<div style="text-align: right; cursor: default; height: 40px;">
+				<span style="font-size:26px;color: lightseagreen;" onclick="CloseDiv('MyDiv','fade')">关闭</span>
+			</div>
+			<div class="jumbotron" style="border-radius: 15px;background-color:lightblue;">
+					<form>
+						<div style="background:lightblue;width: 80%;margin-top: -30px;" class="row">
+							<div class="col-md-2">
+								<input type="text" class="form-control" id="cid" placeholder="ID"style="background-color:slateblue;" >
+								<span id="msg"></span>
+								<i class="fa fa-user"></i>
+							</div>
+							<div class="col-md-2">
+								<input type="text" class="form-control" id="cname" placeholder="昵称"style="background-color:slateblue;" />
+							</div>
+							
+							<!--<button class="btn btn-default" onclick="">注册</button>-->
+						</div>
+						<textarea type="text" class="jumbotron" id="csubstance" style="height: 200px;width: 80%;background-color:lightblue;"></textarea>
+						
+						<a class="btn btn-lg btn-info " onclick="regist()" role="button " style="margin-bottom: -40px;float: right;">提交»</a>
+					</form>
+				</div>
+		</div>
+		</div>
+					
+				
+		<div class="yj_content ctd_head_box">
+			
+			<div class="ctd_head_right cf">
+					<a class="user_img" href=""><img class="img-circle" src="image/(2).jpg" style="height: 40px;width: 40px;"></a>
+					<p class="nickname">
+						<a href="" id="authorDisplayName" style="color: mediumvioletred;float: right;">{{item.tid}}</a>
+					</p>
+					<p class="level" style="color: mediumvioletred;float: right;">
+						VIP2&nbsp;&nbsp;
+						<a href="https://you.ctrip.com/members/C57/journals" target="_blank">11篇游记</a>
+					</p>
+					
+					<!-- 徽章控件 end -->
+				</div>
+			<div class="ctd_head_con cf">
+				<div class="time">20190308</div>
+				<h2 class="title1">{{item.tposition}}</h2>
+
+				
+
+			</div>
+		
+		</div>
+		
+				<!-- 游记正文 -->
+				<div class="ctd_main_body">
+					<!--喜欢&分享etc-->
+						<div class="ctd_content">{{item.tcontent}}</div>
+					<div class="ctd_controls cf">
+						
+						<span class="fr">
+                        
+                        <a id="TitleFavourite" href="javascript:;" class="link_collect  a_popup_login " data-favouriteid="3766686" data-favouritecategory="1" title="一键收藏">
+                            <i></i>收藏
+                        </a> <a data-shareid="3766686" data-sharecategory="0" data-share-pic="https://youimg1.c-ctrip.com/target/100u10000000oisic7C8E.jpg" data-share-url="" data-share-title="{{{}}}很有用，仿佛跟着作者去旅行，请戳&gt;&gt;&gt;" class="link_share" href="javascript:;" title="一键分享" rel="nofollow">
+                            <i></i>分享
+                        </a><a id="TitleLike" href="javascript:;" class="link_like" data-likeid="3766686" data-likecategory="0" title="喜欢就点击一下" rel="nofollow">
+                            <i></i>喜欢<span style="color: red;">{{item.tlike}}</span>
+						</a>
+						
+						<a class="link_browse" href="javascript:;">
+							<i></i>浏览<span>{{item.tlike}}</span>
+						</a>
+					
+					<span style=" background-color:lightseagreen;float: right;border-radius: 15px;width: 40px;height: 30px;"><a class="link_comment " href="javascript:;"  rel="nofollow" id="comments" onclick="ShowDiv('MyDiv','fade')">
+							<i></i><span style="color: white;">评论</span>
+						</a></span>
+						</span>
+						
+					</div>
+					
+				
+				</div>
+				
+				
+				
+				<!-- 游记正文 end -->
+			
+		</div>	
+		
+		</div>
+		
+			</div>
+			</div>
+						<p> </p>
+						<!--///////////////////////////////////////-->
+
+						<!--/////////////////////////轮播结束/////////////////////////////-->
+
+						<div class="jumbotron ">
+							<h1>Navbar example</h1>
+							<p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+							<p>To see the difference between static and fixed top navbars, just scroll.</p>
+							<p>
+								<a class="btn btn-lg btn-primary " href="../../components/#navbar " role="button ">View navbar docs »</a>
+							</p>
+						</div>
+
+					</div>
+					<!--主页面内容到这儿上面的div结束-->
+				</div>
+
+			</div>
+			<div class="footer " style="height: 60px;background: deeppink; ">
+
+			</div>
+	</div>
+	<script>
+    	var vm = new Vue({
+    		el:"#app",
+    		data:{
+    			list:[]
+    			/*vid:'',
+    			vpic:'',
+				vname:'',
+				vprice:''
+				*/
+    		},
+    		mounted:function(){
+    			this.getsView();
+    		},
+ 	
+ 	methods:{
+    			getsView:function(){
+    				var _this=this;
+    				this.$http.get("http://localhost:8080/LeHeHe/content/TrcontentJsonBody").then(function(res){
+    				//	document.write(data.body);
+		_this.list=res.body;
+	
+    				})
+    			},
+    			
+  				/*getInfo(){
+    				this.$http.get("http://localhost:8080/SSM20190225/ViewJsonBody").then(function(data){
+    					console.log(data.body);
+						this.items=JSON.parse(data.body);	http://localhost:8080/LeHeHe/comments/CommentsJsonBody
+})
+    			},*/
+    		}
+    	})
+    </script>
+   <!--<script>
+    	var vm = new Vue({
+    		el:"#comments",
+    		data:{
+    			com:[]
+    			/*vid:'',
+    			vpic:'',
+				vname:'',
+				vprice:''
+				*/
+    		},
+    		mounted:function(){
+    			this.getcom();
+    		},
+ 	
+ 	methods:{
+    			getcom:function(){
+    				var _this=this;
+    				this.$http.get("http://localhost:8080/LeHeHe/comments/CommentsJsonBody").then(function(coms){
+    				//	document.write(data.body);
+		_this.com=coms.body;
+	
+    				})
+    			},
+    			
+  			
+    		}
+    	})
+    </script>-->
+   
+	</body>
+
+</html>
